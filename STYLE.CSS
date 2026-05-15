@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('Tipografías/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Aspectos generales*/
+ul , li , a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-family: Helvetica;
+}
+h3 {
+    font-family: Helvetica;
+    font-weight: 50;
+    letter-spacing: 0.1rem;
+}
+
+/*Menú*/
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid black;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 50;
+}
+#menu > ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#menu > figure > img {
+    height: 2rem;
+}
+#menu > ul > li > a {
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+/*Cabecera*/
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+header > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: scale(1.4);
+}
+header > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #A02C2B;
+    color: white;
+    text-align: center;
+    padding: 5rem;
+}
