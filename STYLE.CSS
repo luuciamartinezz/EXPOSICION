@@ -14,13 +14,16 @@ ul , li , a {
     text-decoration: none;
     color: black;
 }
-h1 {
+h1 , h2 , h3 {
     font-family: Helvetica;
 }
 h4 {
     font-family: Helvetica;
     font-weight: 50;
     letter-spacing: 0.1rem;
+}
+p , ul > li {
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /*Menú*/
@@ -54,6 +57,7 @@ h4 {
     font-weight: bold;
 }
 
+/*Home*/
 /*Cabecera*/
 header {
     width: 100%;
@@ -101,4 +105,66 @@ header > div > div {
 header > div > div > hr {
     background-color: white;
     height: 1px;
+}
+
+/*Raya lateral*/
+body > hr {
+    border: none;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    margin-left: 2.5rem;
+    z-index: -1;
+}
+/*Sección home 1 y raya separadora*/
+section > hr {
+    background-color: black;
+    height: 1px;
+    border: none;
+}
+#intro > p {
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+}
+
+/*Galería home*/
+#galeriahome {
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+#galeriahome > div {
+    padding-top: 3rem;
+}
+#galeriahome > div > h3 {
+    padding-top: 0.5rem;
+}
+
+/*Sección home 2*/
+#home2 > p {
+    padding-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/*Sección Mapa*/
+#mapa > div {
+    padding-top: 3rem;
+}
+#mapa > iframe {
+    padding-top: 5rem;
+}
+#mapa > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 2rem;
+}
+#mapa > div > div {
+    gap: 1rem;
+}
+#mapa > div > div > h3 {
+    padding-top: 0.5rem;
 }
