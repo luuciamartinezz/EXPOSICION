@@ -17,7 +17,7 @@ ul , li , a {
 h1 {
     font-family: Helvetica;
 }
-h3 {
+h4 {
     font-family: Helvetica;
     font-weight: 50;
     letter-spacing: 0.1rem;
@@ -43,8 +43,11 @@ h3 {
     align-items: center;
     gap: 2rem;
 }
-#menu > figure > img {
+#menu > figure > a > img {
     height: 2rem;
+}
+#menu > figure > a{
+    display: block;
 }
 #menu > ul > li > a {
     font-family: Helvetica;
@@ -72,10 +75,30 @@ header > div {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     z-index: 1;
     background-color: #A02C2B;
     color: white;
     text-align: center;
-    padding: 5rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+header > div > h1 {
+    font-size: 7rem;
+    padding-bottom: 2rem;
+}
+header > div > h4 {
+    font-size: 1rem;
+}
+header > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+}
+header > div > div > hr {
+    background-color: white;
+    height: 1px;
 }
