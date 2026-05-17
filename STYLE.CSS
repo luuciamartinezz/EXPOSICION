@@ -31,7 +31,7 @@ ul > li {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/*Menú*/
+/*Menú -----------------------------------------------------------------------*/
 #menu {
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@ ul > li {
   font-weight: bold;
 }
 
-/*Home*/
+/*Home-----------------------------------------------------------------------*/
 /*Cabecera*/
 header {
   width: 100%;
@@ -153,42 +153,42 @@ section > hr {
   padding-bottom: 3rem;
 }
 
-/* EXPO */
+/* EXPO -----------------------------------------------------------------------*/
 /* header expo */
-#homeexpo {
+#headerexpo {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 8rem;
   text-align: center;
 }
-#homeexpo > div {
+#headerexpo > div {
   background-color: transparent;
   color: black;
   position: static;
   transform: none;
   padding: 0;
 }
-#homeexpo > div > h2 {
+#headerexpo > div > h2 {
   color: black;
   font-size: 10rem;
 }
 
-#homeexpo > div > p {
-  font-size: 5rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  margin-top: 1rem;
+#headerexpo > div > p {
+  font-size: 3rem;
+  font-family: Helvetica;
   color: black;
-  letter-spacing: 0.05rem;
 }
 
 /* intro expo */
-
+#introexpo {
+  margin-top: -8rem;
+  position: relative;
+}
 #introexpo > div,
 #finalexpo > div {
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
@@ -203,13 +203,19 @@ section > hr {
 
 #expo > article {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 4rem;
   margin-bottom: 6rem;
 }
-
+#expo > article > div {
+  width: 50%;
+}
+#expo > article:nth-child(odd) > div {
+  text-align: right;
+}
 #expo > article:nth-child(even) {
   flex-direction: row-reverse;
+  text-align: left;
 }
 
 #expo > article > figure {
@@ -234,7 +240,7 @@ section > hr {
   line-height: 1.7rem;
 }
 
-/*Sección Mapa*/
+/*Sección Mapa-----------------------------------------------------------------------*/
 #mapa > div {
   padding-top: 3rem;
 }
