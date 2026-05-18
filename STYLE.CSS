@@ -171,7 +171,7 @@ section > hr {
 }
 #headerexpo > div > h2 {
   color: black;
-  font-size: 10rem;
+  font-size: 9rem;
 }
 
 #headerexpo > div > p {
@@ -182,14 +182,19 @@ section > hr {
 
 /* intro expo */
 #introexpo {
-  margin-top: -8rem;
+  margin-top: -10rem;
   position: relative;
 }
+
 #introexpo > div,
 #finalexpo > div {
   padding-left: 5rem;
   padding-right: 2rem;
   padding-bottom: 4rem;
+}
+#introexpo > div > p,
+#finalexpo > div > p {
+  font-size: 1.1rem;
 }
 
 /* galeria expo */
@@ -198,7 +203,6 @@ section > hr {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 #expo > article {
@@ -208,7 +212,7 @@ section > hr {
   margin-bottom: 6rem;
 }
 #expo > article > div {
-  width: 50%;
+  width: 100%;
 }
 #expo > article:nth-child(odd) > div {
   text-align: right;
@@ -237,7 +241,47 @@ section > hr {
 }
 
 #expo > article > div > p {
-  line-height: 1.7rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+#expo > article:nth-child(5) > figure {
+  width: 35%;
+}
+
+#expo > article:nth-child(5) > div {
+  width: 65%;
+}
+
+#expo > div > figure > img {
+  width: 35%;
+}
+
+/* Contenedor dos columnas */
+#expo article.doble {
+  display: flex;
+}
+
+.col-izq {
+  width: 45%;
+}
+
+.col-der {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+
+.texto-superior p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+#expo article.doble img {
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 /*Sección Mapa-----------------------------------------------------------------------*/
