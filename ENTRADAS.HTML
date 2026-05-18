@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Helen Levitt</title>
+    <meta charset="utf-8" />
+    <link href="STYLE.CSS" rel="stylesheet" type="text/css" />
+    <link href="Media/favicon.png" rel="icon" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c7b3362217.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="SCRIPT.JS"></script>
+  </head>
+
+  <body>
+    <section id="entradas">
+      <h1>Compra de entradas</h1>
+      <!-- Se añade la detección del evento Submit para llamar a la función comprar() cuando se pulse el botón -->
+      <form onsubmit="return comprar();">
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Escribe tu nombre"
+          required
+        />
+        <label for="correo">Correo electrónico:</label>
+        <input
+          type="email"
+          id="correo"
+          placeholder="Escribe tu correo"
+          required
+        />
+        <label for="exposicion">Exposición:</label>
+        <!-- Se llama a la función costeTotal() cuando hay cambios en la exposición seleccionada -->
+        <select id="exposicion" onchange="costeTotal()">
+          <option value="e1">Exposición 1 - 8 €</option>
+          <option value="e2">Exposición 2 - 10 €</option>
+          <option value="e3">Exposición 3 - 15 €</option>
+        </select>
+        <label for="numero">Número de entradas:</label>
+        <!-- Se llama a la función costeTotal() cuando hay cambios en el número de entradas -->
+        <input
+          type="number"
+          id="numero"
+          min="1"
+          max="10"
+          placeholder="Número de entradas"
+          required
+          onchange="costeTotal()"
+        />
+        <p>Coste total de las entradas: <span id="coste"></span></p>
+        <input type="submit" value="Comprar entradas" />
+      </form>
+    </section>
+    <div id="modal">
+      <div>
+        <h2>La compra se ha realizado correctamente</h2>
+        <ul>
+          <li>Nombre: <span id="nom"></span></li>
+          <li>Correo electrónico: <span id="corr"></span></li>
+          <li>Exposición: <span id="ex"></span></li>
+          <li>Número de entradas: <span id="num"></span></li>
+          <li>Coste total: <span id="ct"></span></li>
+        </ul>
+        <!-- Se llama a la función cerrarVentana() cuando se pulsa el botón -->
+        <button onclick="cerrarVentana()">Aceptar</button>
+      </div>
+    </div>
+  </body>
+</html>
