@@ -284,6 +284,32 @@ section > hr {
   height: auto;
 }
 
+/*Sobre la artistra-------------------------------------------------------------------*/
+/* #biografia {
+  --grid-gutter: 0;
+  --grid-width: 100%;
+  padding-left: var(--spacer-03);
+} */
+
+#introartista > div {
+  display: flex;
+  margin-top: 0;
+  padding-top: -3rem;
+  padding-left: 2.55rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#datocurioso > div > figure {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*Sección Mapa-----------------------------------------------------------------------*/
 #mapa > div {
   padding-top: 3rem;
